@@ -3,19 +3,6 @@ const typewriter = qs("#typewriter-dynamic");
 const IDENTITY = ["Student.", "Learner.", "Leader.", "Athlete."];
 let index = 1;
 const sleep = async (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-document.body.style.zoom = "100%";
-
-// init timeline height
-const body = document.body;
-const html = document.documentElement;
-const height = Math.max(
-  body.scrollHeight,
-  body.offsetHeight,
-  html.clientHeight,
-  html.scrollHeight,
-  html.offsetHeight
-);
-// qs('#timeline').style.setProperty('--height', height + 300 + 'px')
 
 const initTypewriter = async (text) => {
   typewriter.classList.remove("typewrite");

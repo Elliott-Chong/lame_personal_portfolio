@@ -3,14 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0 max-scale=0.65"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=0.65" />
     <title>Elliott Chong</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <link
@@ -31,20 +27,25 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" type="module" defer></script>
+    <script src="about.js" defer></script>
   </head>
   <body>
-    <nav id="nav">
+    <nav id="side-nav">
+        <a id="contact-nav" class="nav-item" href="/contact.html">.contact()</a>
+        <a id="project-nav" class="nav-item" href="/projects.html">.projects()</a>
+        <a id="timeline-nav" class="nav-item" href="/timeline.html">.timeline()</a>
+        <a class="nav-item" id="sp-nav" href="/sp.html">.SP()</a>
+        <a class="nav-item" id="career-nav" href="/career.html">.careers()</a>
+    </nav>
+    <nav id="nav" class="about-nav">
+      <span id="ham"></span>
       <div>
-        <a
-          href="index.html"
-          className="logo font-mono text-terminalGreen font-medium md:text-3xl text-2xl"
-        >
-          elliott.Chong()
-        </a>
-        <a id="project-nav" href="/projects.html">.projects()</a>
-        <a id="contact-nav" href="/contact.html">.contact()</a>
-        <a id="about-nav" href="/about.html">.about()</a>
+        <a href="index.html" class="nav-item">elliott.Chong()</a>
+        <a id="contact-nav" class="nav-item" href="/contact.html">.contact()</a>
+        <a id="project-nav" class="nav-item" href="/projects.html">.projects()</a>
+        <a id="timeline-nav" class="nav-item" href="/timeline.html">.timeline()</a>
+        <a class="nav-item" id="sp-nav" href="/sp.html">.SP()</a>
+        <a class="nav-item" id="career-nav" href="/career.html">.careers()</a>
       </div>
       <div id="social-icons-nav" className="ml-auto hidden lg:flex">
         <div>
@@ -75,374 +76,85 @@
           </a>
         </div>
       </div>
+
     </nav>
-    <main id="main-container">
-      <aside id="timeline">
-        <div id="timeline-circle"></div>
-      </aside>
-      <section id="content-container">
-        <article id="typewriter-div" class="content">
-          <span id="typewriter-main" class="main-text">I am</span>
-          <span id="typewriter-dynamic" class="main-text"></span>
-        </article>
+    <main id="main-about-container">
+        <section class="about-wrapper img-wrapper">
+              <article id="about-me" class="three-quarter-div">
+                  <h2 class="intro">👋</h2>
+                  <h2 class="intro">
+                    Hello, I am Elliott Chong
+                  </h2>
+                  <p class="sub-text">
+                    computer science enthusiast, web designer hobbyist
+                  </p>
+                  <!-- <p class="about-p">
+                      An autodidact who is deeply intrigued by all things math and computer science.
+                  </p>
+                  <p class="about-p">
+                    I am a 17 year old student currently studying in Singapore Polytechnic.
+                  </p> -->
+              </article>
+              <figure class="quarter-div">
+                  <img src="./images/about.jpeg" class="about-img" alt="profile picture">
+              </figure>
+          </section>
 
-        <section id="aspiration-div" class="content">
-          <h1 class="main-text">
-            An aspiring full-stack developer with a passion for learning.
-          </h1>
-        </section>
+           <section class="about-wrapper img-wrapper">
+               <figure class="quarter-div">
+                   <img src="./images/about1.jpeg" class="about-img" alt="profile picture">
+               </figure>
+              <article id="about-me" class="three-quarter-div">
+                  <h2 class="intro">
+                    😺 Hobbies
+                  </h2>
+                  <!-- <p class="sub-text">
+                    computer science enthusiast, web designer hobbyist
+                  </p> -->
+                    <ul class="about-ul">
+                        
+                        <li class="about-li">
+                            <details class="about-details">
+                                <summary class="about-summary">Running</summary>
+                                <p>
 
-        <section id="robotics-div" class="content">
-          <h1 class="main-text">
-            My interest in computer science began in primary 5 when I joined my
-            school's robotic CCA.
-          </h1>
-          <figure class="img-wrapper">
-            <img src="./images/robotics.png" alt="robotics" />
-          </figure>
-        </section>
+                                    Running helps me to destress and makes me feel happy and relaxed.
+                                </p>
+                                <br>
+                                <p>
 
-        <section id="scratch-div" class="content">
-          <h1 class="main-text">
-            In Secondary 1 & 2, I discovered the world of scratch, which was
-            where I would spent a lot of my time making games.
-          </h1>
-          <div id="scratch-img-wrapper" class="img-wrapper">
-            <figure class="img-div half-div">
-              <img src="./images/car-racing-game.png" alt="car racing game" />
-              <a href="https://scratch.mit.edu/projects/90753321/"
-                ><button target="_blank" class="btn">Link to game</button></a
-              >
-            </figure>
-            <figure class="img-div half-div">
-              <img src="./images/snake-game.png" alt="snake game" />
-              <a
-                target="_blank"
-                href="https://scratch.mit.edu/projects/215637415/"
-                ><button class="btn">Link to game</button></a
-              >
-            </figure>
-          </div>
-        </section>
+                                    I get to enjoy beautiful sceneries during my run.
+                                </p>
+                                <br>
+                                <p>
+                                        My current goal is to run a half-marathon.
+                                </p>
 
-        <section id="whatsbus-div" class="content">
-          <h1 class="main-text">
-            It was around Secondary 3 where I started teaching myself Python
-            through online tutorials, building out many small projects along the
-            way.
-          </h1>
-          <div id="whatsbus-img-wrapper" class="img-wrapper">
-            <figure class="img-div three-quarter-div">
-              <img src="./images/whatsbus.png" alt="whatsbus img" />
-              <p class="desc">
-                A script I wrote that pulled data from LTA's bus arrival API and
-                updated users on WhatsApp in real time.
-              </p>
-            </figure>
-            <figcaption class="quarter-div">
-              <a
-                href="https://github.com/Elliott-Chong/whatsbus"
-                target="_blank"
-                ><button class="btn">Link to Source Code</button></a
-              >
-              <p class="desc">
-                I wrote this program primarily to solve my own problem of always
-                missing the bus.
-              </p>
-              <p class="desc">
-                Instead of manually checking a bus app, the script would
-                automatically remind me of bus timings so that I can plan my
-                travels better.
-              </p>
-            </figcaption>
-          </div>
-        </section>
+                            </details>
+                        </li>
+                        <li class="about-li">
+                            <details class="about-details">
+                                <summary class="about-summary">Coding</summary>
+                             <p>
+                                 Programming, more specifically web design, gives me plenty of fulfillment and satisfaction
+                             </p>
+                            </details>
+                            
+                        </li>
+                        <li class="about-li">
+                            <details class="about-details">
+                                <summary class="about-summary">Gym</summary>
+                            Working out and pushing myself in the gym trains my self-discipline and boosts my self confidence.
+                            </details>
 
-        <section id="cs50-div" class="content">
-          <h1 class="main-text">
-            This year, I started getting even more into programming, taking
-            CS50, Harvard University's Intro to Computer Science course online.
-          </h1>
-          <div id="cs50-img-div" class="img-wrapper">
-            <figure class="half-div img-div">
-              <img src="./images/caeser.png" alt="caeser img" />
-              <p class="desc">My first caesar cipher script written in C</p>
-            </figure>
-            <figure class="half-div img-div">
-              <iframe
-                title="Caesar Cipher REPLIT"
-                src="https://replit.com/@ElliottChong/Caesar-Cipher?embed=true"
-                frameborder="0"
-              ></iframe>
-              <p class="desc">
-                Click the green run button to try out the code!
-              </p>
-            </figure>
-          </div>
-        </section>
-
-        <section id="finance-div" class="content">
-          <h1 class="main-text">
-            It was in CS50 where I got my first experience with web development,
-            creating a stock trading simulator with flask, using an external
-            API.
-          </h1>
-          <div id="finance-img-div" class="img-wrapper">
-            <figure class="three-quarter-div img-div">
-              <img src="./images/finance.png" alt="finance png" />
-            </figure>
-            <figcaption class="quarter-div">
-              <a
-                href="https://github.com/Elliott-Chong/elle-finance"
-                target="_blank"
-                ><button class="btn">Link to Source Code</button></a
-              >
-              <p class="desc">
-                CS50 Finance, an assignment part of the course that taught me
-                the basics of web programming.
-              </p>
-              <p class="desc">
-                This project truly opened my eyes to the world of web
-                development. It taught me the use of external REST APIs to
-                utilise other people's data in my own project, and also taught
-                me the use of SQL to manage data in my database.
-              </p>
-            </figcaption>
-          </div>
-        </section>
-
-        <section id="udemy-div" class="content">
-          <h1 class="main-text">
-            After CS50 piqued my interest in web development, I furthered my
-            knowledge by taking online courses on Udemy and YouTube.
-          </h1>
-          <div id="udemy-img-div" class="img-wrapper">
-            <figure class="img-div three-quarter-div">
-              <img src="./images/udemy.png" alt="udemy img" />
-            </figure>
-            <figcaption class="quarter-div">
-              <a
-                href="https://github.com/Elliott-Chong/react-search-github-users"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><button class="btn">Link to Source Code</button></a
-              >
-              <a
-                href="https://github-users-elliott.netlify.app"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button class="btn">Link to Project</button>
-              </a>
-              <p class="desc">
-                Github-Users, A project assigned by my Udemy course on the
-                frontend React framework.
-              </p>
-              <p class="desc">
-                This project solidified my learning of the React framework,
-                teaching me the use of the GitHub API and more advanced React
-                concepts.
-              </p>
-              <p class="desc">
-                I learnt how to utilize external NPM libraries to help
-                accomplish complex features with ease. e.g. Using FusionCharts
-                to make beautiful charts to display user data.
-              </p>
-            </figcaption>
-          </div>
-        </section>
-
-        <section id="codewars-div" class="content">
-          <h1 class="main-text">
-            It was around this time where I discovered competitive programming.
-            This was where I honed my Python skills by solving questions.
-          </h1>
-          <div id="codewars-img-wrapper" class="img-wrapper">
-            <figure class="half-div img-div">
-              <img
-                src="./images/codewars-question.png"
-                alt="codewars question"
-              />
-            </figure>
-            <figure class="half-div">
-              <img
-                src="./images/codewars-solution.png"
-                alt="codewars solution"
-              />
-              <figcaption>
-                <p class="desc">
-                  Codewars, an algorithmic style coding challenge website where
-                  users can write code in their preferred language to solve a
-                  set of problems
-                </p>
-                <a
-                  href="https://www.codewars.com/users/ElliottBelle"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button class="btn">My Codewars Profile</button>
-                </a>
-              </figcaption>
-            </figure>
-          </div>
-        </section>
-
-        <section id="devconnector-div" class="content">
-          <h1 class="main-text">
-            While improving my algorithms and data structures knowledge, I
-            continued taking online web development courses. Learning a full
-            stack tech stack.
-          </h1>
-
-          <div id="devconnector-img-div" class="img-wrapper">
-            <figure class="three-quarter-div img-div">
-              <img src="./images/devconnector.png" alt="devconnector" />
-            </figure>
-            <figcaption class="quarter-div">
-              <a
-                href="https://github.com/Elliott-Chong/DevConnector"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button class="btn">Link to Source Code</button>
-              </a>
-
-              <a
-                href="https://devconnector-elliott.netlify.app"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button class="btn">Link to Project</button>
-              </a>
-
-              <p class="desc">
-                DevConnector, a social media platform made for developers. Made
-                with MongoDB, ExpressJS & React. The project was built out along
-                a course teaching full stack web development.
-              </p>
-              <p class="desc">
-                This was my first full stack course, building from scratch both
-                the backend API endpoints with expressJS and MongoDB, and also
-                the frontend with ReactJS. It taught me important concepts such
-                as JWTs for authentication and password encryption.
-              </p>
-            </figcaption>
-          </div>
-        </section>
-
-        <section id="sportbuddy-div" class="content">
-          <h1 class="main-text">
-            My latest project, SportBuddy, is my first full stack project. From
-            the frontend UI to the backend API design, everything was built and
-            designed from scratch by me.
-          </h1>
-
-          <div id="sportbuddy-img-wrapper" class="img-wrapper">
-            <figure class="img-div three-quarter-div">
-              <img src="./images/sportbuddy.png" alt="sportbuddy img" />
-            </figure>
-
-            <figcaption class="quarter-div">
-              <a
-                href="https://github.com/Elliott-Chong/SportBuddy"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button class="btn">Link to Source Code</button>
-              </a>
-
-              <a
-                href="https://sportbuddy.elliottchong.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button class="btn">Link to Project</button>
-              </a>
-
-              <p class="desc">
-                SportBuddy, a social media platform that allows users to find
-                companions to play sports with.
-              </p>
-              <p class="desc">
-                Sometimes your friends might be too busy, with SportBuddy, you
-                simply have to create a listing, and other users can join you!
-              </p>
-            </figcaption>
-          </div>
-        </section>
-
-        <section id="portfolio-div" class="content">
-          <h1 class="main-text">
-            This website is a showcase of all my significant projects so far. I
-            am proud of the work that I have put in to learn and build out all
-            these projects.
-          </h1>
-          <div id="portfolio-img-div" class="img-wrapper">
-            <figure class="three-quarter-div img-div">
-              <img
-                src="./images/personal_portfolio.png"
-                alt="personal portfolio"
-              />
-            </figure>
-
-            <figcaption class="quarter-div">
-              <a
-                href="https://github.com/Elliott-Chong/pure_personal_portfolio"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button class="btn">Link to Source Code</button></a
-              >
-              <p class="desc">
-                This website was originally built out using ReactJS, with custom
-                CSS written using Tailwind CSS, a utility based CSS framework.
-              </p>
-
-              <p class="desc">
-                Due to assingments constraints, this whole website had to be
-                ported over to vanilla HTML and CSS :(
-              </p>
-
-              <p class="desc">
-                The theme and design of this website was designed by me from
-                scratch using Inkscape, a vector based graphics editor.
-              </p>
-            </figcaption>
-          </div>
-        </section>
-
-        <section id="ending-aspirations-div" class="content">
-          <h1 class="main-text">
-            Of course, I shall continue to strive to improve myself and
-            hopefully get closer to my dream of one day changing the world for
-            the better with technology.
-          </h1>
-        </section>
-
-        <footer id="ending-credentials-div">
-          <h3 class="credentials">Email: elliottchong16@gmail.com</h3>
-          <h3 class="credentials">
-            <a href="/contact.html"><u>Contact me</u></a>
-          </h3>
-          <div id="social-icons-end">
-            <i class="fa-brands fa-github social-icon"></i>
-            <i class="fa-brands fa-instagram social-icon"></i>
-            <i class="fa-brands fa-linkedin social-icon"></i>
-          </div>
-          <span class="mobile-project"
-            >>&nbsp;view more of my projects
-            <u><a href="/projects.html">here</a></u></span
-          >
-          <span class="desktop-project"
-            >>&nbsp;view more of my projects (press Enter to cd)</span
-          >
-          <span class="desktop-project">
-            <button id="ending-credentials-btn">
-              $ cd /home/elliott/projects
-            </button>
-          </span>
-        </footer>
-      </section>
+                        </li>
+                    </ul>
+                  
+              </article>
+          </section>
+          
     </main>
+      </div>
+    </div>
   </body>
 </html>
