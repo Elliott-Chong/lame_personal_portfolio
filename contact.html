@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./contact.js" type="module" defer></script>
+    <title>Elliott Chong</title>
+  </head>
+  <body>
+    <nav id="nav">
+      <div>
+        <a
+          href="index.html"
+          className="logo font-mono text-terminalGreen font-medium md:text-3xl text-2xl"
+        >
+          elliott.Chong()
+        </a>
+        <a id="project-nav" href="/projects.html">.projects()</a>
+      </div>
+      <div id="social-icons-nav" className="ml-auto hidden lg:flex">
+        <div>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/Elliott-Chong"
+          >
+            <i class="fa-brands fa-github social-icon"></i>
+          </a>
+        </div>
+        <div>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.instagram.com/el.lebelle/"
+          >
+            <i class="fa-brands fa-instagram social-icon"></i>
+          </a>
+        </div>
+        <div>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/elliott-chong-566a98224/"
+          >
+            <i class="fa-brands fa-linkedin social-icon"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div id="main-contact-container">
+      <h1 class="main-text">Contact me:</h1>
+
+      <form action="/" id="contact-form">
+        <div class="form-control">
+          <input
+            required
+            autocomplete="off"
+            type="text"
+            name="name"
+            id="name"
+          />
+          <label for="name">&nbsp; Name</label>
+          <span class="arrow">></span>
+          <span class="line"></span>
+        </div>
+
+        <div class="form-control">
+          <input
+            required
+            autocomplete="off"
+            type="text"
+            name="email"
+            id="email"
+          />
+          <label for="email">&nbsp; Email</label>
+          <span class="arrow">></span>
+          <span class="line"></span>
+        </div>
+
+        <div class="form-control">
+          <textarea
+            required
+            name="message"
+            id="message"
+            cols="30"
+            rows="3"
+          ></textarea>
+          <label for="message">&nbsp; Message</label>
+          <span class="arrow">></span>
+          <span class="line"></span>
+        </div>
+
+        <button type="submit" class="btn contact-btn">
+          Submit
+          <img
+            class="hidden"
+            id="spinner"
+            src="./images/spinner.gif"
+            alt="spinner"
+          />
+          <img src="./images/check.png" alt="check" class="hidden" id="check" />
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
