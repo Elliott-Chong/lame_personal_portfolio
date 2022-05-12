@@ -27,6 +27,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="./career.js" type="module"></script>
   </head>
   <body>
     <nav id="nav" class="about-nav">
@@ -42,7 +43,7 @@
         <a class="nav-item" id="sp-nav" href="/sp.html">.SP()</a>
         <a class="nav-item" id="career-nav" href="/career.html">.careers()</a>
       </div>
-      <div id="social-icons-nav" className="ml-auto hidden lg:flex">
+      <div id="social-icons-nav">
         <div>
           <a
             target="_blank"
@@ -73,74 +74,107 @@
       </div>
     </nav>
     <main id="main-about-container">
+      <h2 class="intro">My favourite modules in SP</h2>
       <section class="about-wrapper img-wrapper">
-        <article id="about-me" class="three-quarter-div">
-          <h2 class="intro">👋</h2>
-          <h2 class="intro">Hello, I am Elliott Chong</h2>
-          <p class="sub-text">
-            computer science enthusiast, web designer hobbyist
-          </p>
-          <!-- <p class="about-p">
-                      An autodidact who is deeply intrigued by all things math and computer science.
-                  </p>
-                  <p class="about-p">
-                    I am a 17 year old student currently studying in Singapore Polytechnic.
-                  </p> -->
-        </article>
-        <figure class="quarter-div">
-          <img
-            src="./images/about.jpeg"
-            class="about-img"
-            alt="profile picture"
-          />
-        </figure>
+        <table class="styled-table">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Module</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Frontend Web Development</td>
+              <td>Web design is very interesting</td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>Fundamentals of Computing</td>
+              <td>Networking is cool</td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>Math</td>
+              <td>Math is fun</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
-      <section class="about-wrapper img-wrapper">
-        <figure class="quarter-div">
-          <img
-            src="./images/about1.jpeg"
-            class="about-img"
-            alt="profile picture"
-          />
-        </figure>
-        <article id="about-me" class="three-quarter-div">
-          <h2 class="intro">😺 Hobbies</h2>
-          <!-- <p class="sub-text">
-                    computer science enthusiast, web designer hobbyist
-                  </p> -->
-          <ul class="about-ul">
-            <li class="about-li">
-              <details class="about-details">
-                <summary class="about-summary">Running</summary>
-                <p>
-                  Running helps me to destress and makes me feel happy and
-                  relaxed.
-                </p>
-                <br />
-                <p>I get to enjoy beautiful sceneries during my run.</p>
-                <br />
-                <p>My current goal is to run a half-marathon.</p>
-              </details>
-            </li>
-            <li class="about-li">
-              <details class="about-details">
-                <summary class="about-summary">Coding</summary>
-                <p>
-                  Programming, more specifically web design, gives me plenty of
-                  fulfillment and satisfaction
-                </p>
-              </details>
-            </li>
-            <li class="about-li">
-              <details class="about-details">
-                <summary class="about-summary">Gym</summary>
-                Working out and pushing myself in the gym trains my
-                self-discipline and boosts my self confidence.
-              </details>
-            </li>
-          </ul>
-        </article>
+      <section id="frontend-web-development" class="about-wrapper">
+        <div class="img-wrapper">
+          <div class="three-quarter-div">
+            <img src="./images/pexels-pixabay-276452.jpg" alt="frontend" />
+          </div>
+          <div class="quarter-div center">
+            <h2 class="section-title"><u>Frontend web development</u></h2>
+            <p class="career-desc">
+              FED gives us the knowledge and skills to develop effective
+              front-end web applications using Hypertext Markup Language (HTML)
+              and Cascading Stylesheets (CSS). We learn to use front-end web
+              development frameworks to further enhance our ability for rapid
+              prototyping of responsive web application.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="fundamentals-of-computing" class="about-wrapper">
+        <div class="img-wrapper">
+          <div class="three-quarter-div center">
+            <h2 class="section-title">
+              <u> Fundaments of computing </u>
+            </h2>
+            <p class="career-desc">
+              This module provides us with an understanding of computer
+              networking concepts and hands-on sessions on with operating
+              systems using Command-Line Interfaces.
+              <br /><br />
+              We are taught the use of various UNIX commands / system tools for
+              user management, software installation, network administration and
+              configuration of services.
+
+              <br /><br />
+
+              These topics are essential and prerequisite to an Application
+              Developer for building and deployment of a software system.
+            </p>
+          </div>
+          <div class="quarter-div">
+            <img
+              src="./images/pexels-athena-2582937.jpg"
+              alt="cs research img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="math" class="about-wrapper">
+        <div class="img-wrapper">
+          <div class="three-quarter-div">
+            <img
+              src="./images/pexels-jeswin-thomas-3781338.jpg"
+              alt="cs research img"
+            />
+          </div>
+          <div class="quarter-div center">
+            <h2 class="section-title"><u>Mathematics</u></h2>
+            <p class="career-desc">
+              This module equpis us with knowledge in mathematics and analytical
+              skills to solve problems related to infocomm technology.
+
+              <br /><br />
+              Topics include matrices, linear transformation, number systems,
+              set theory, logic, Boolean algebra, techniques of counting and
+              probability.
+            </p>
+          </div>
+        </div>
       </section>
     </main>
   </body>
