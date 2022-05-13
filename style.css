@@ -425,6 +425,41 @@ img {
 
 /* contact.html */
 
+input[type="checkbox"] {
+  width: auto !important;
+  appearance: none;
+  --webkit-appearance: none;
+  position: relative;
+}
+
+input[type="checkbox"]::before {
+  position: absolute;
+  content: "";
+  height: 1rem;
+  width: 1rem;
+  background-color: black;
+  top: 0;
+  left: 0;
+  border: 3px solid white;
+  transition: all 200ms;
+}
+
+#checkbox-wrapper label {
+  margin-right: 1rem;
+}
+
+#aesthetics:checked::before {
+  background-color: var(--terminal-green);
+}
+
+#content:checked::before {
+  background-color: var(--terminal-green);
+}
+
+#me:checked::before {
+  background-color: var(--terminal-green);
+}
+
 #slider {
   background-color: white;
   --webkit-appearance: none;
@@ -440,9 +475,12 @@ img {
 }
 
 .flex {
+  margin-top: 1rem;
   display: flex;
   width: 100%;
   justify-content: flex-start;
+  gap: 1rem;
+  align-items: center;
 }
 
 .input-wrapper p {
@@ -451,6 +489,7 @@ img {
 
 .input-wrapper input[type="radio"] {
   appearance: none;
+  position: absolute !important;
   max-width: 0px;
   --webkit-appearance: none;
 }
@@ -477,16 +516,15 @@ img {
   background-color: black;
   border: 3px solid white;
   border-radius: 50%;
+  transition: all 200ms;
 }
 
 #yes:checked ~ label[for="yes"]::before {
   background-color: var(--terminal-green) !important;
-  font-size: 5rem;
 }
 
 #no:checked ~ label[for="no"]::before {
   background-color: var(--terminal-green) !important;
-  font-size: 5rem;
 }
 
 #slider::-webkit-slider-thumb {
