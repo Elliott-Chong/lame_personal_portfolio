@@ -803,6 +803,10 @@ h3.career-desc {
   font-size: 2rem;
 }
 
+.about-wrapper table {
+  margin: 0 auto;
+}
+
 td {
   border-bottom: thin solid white;
   padding: 1rem;
