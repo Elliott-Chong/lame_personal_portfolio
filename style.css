@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Poppins:wght@400;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css?family=DM+Mono:wght@400;500&family=Poppins:wght@400;700&display=swap");
 :root {
   --terminal-green: rgb(0, 255, 65);
   --yellow: #fcbf49;
@@ -785,7 +784,16 @@ h3.career-desc {
 td {
   border-bottom: thin solid white;
   padding: 1rem;
+  text-align: center;
 }
+
+.period {
+  background-color: var(--terminal-green);
+  color:black;
+  font-weight: bold;
+  border: none !important;
+}
+
 
 th {
   background-color: var(--terminal-green);
@@ -795,6 +803,23 @@ th {
 
 tr:nth-of-type(odd) {
   background-color: rgb(82, 82, 82);
+}
+
+#history tr {
+  background-color: rgb(82, 82, 82);
+}
+
+caption {
+  font-family: Poppins, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+#history td {
+  border-collapse: collapse;
+  border: thin solid white;
+  text-align: center;
 }
 
 tbody tr:hover {
