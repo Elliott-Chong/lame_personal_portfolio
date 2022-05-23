@@ -19,6 +19,8 @@ body {
   overflow-x: hidden !important;
 }
 
+
+
 #side-nav {
   position: fixed;
   top: 0;
@@ -129,12 +131,18 @@ body {
   font-size: 1.5rem;
 }
 
-a {
+
+.nav a {
   color: var(--terminal-green);
   text-decoration: none;
 }
 
-#nav {
+a.btn {
+  color:black;
+  text-decoration: none;
+}
+
+.nav {
   padding: 2rem 3rem;
   display: flex;
   font-size: 1.875rem;
@@ -156,7 +164,7 @@ a {
   right: 0;
 }
 
-#social-icons-nav {
+.social-icons-nav {
   margin-left: auto;
   display: flex;
 }
@@ -167,7 +175,7 @@ a {
   color: white;
   font-size: 2.5rem;
 }
-#social-icons-nav > * {
+.social-icons-nav > * {
   margin: 0 0.5rem;
 }
 #social-icons-end > * {
@@ -283,6 +291,7 @@ img {
 
 .btn {
   padding: 0.5rem 1rem;
+  width: fit-content;
   border: none;
   background-color: var(--terminal-green);
   color: black;
@@ -682,7 +691,7 @@ input[type="checkbox"]::before {
   border-radius: 0;
 }
 
-#about-me {
+.about-me {
   position: relative;
 }
 
@@ -762,7 +771,7 @@ details[open] summary {
   margin-bottom: 1rem;
 }
 
-#about-me {
+.about-me {
   display: flex;
   justify-content: center;
   /* align-items: center; */
@@ -918,7 +927,7 @@ tr:last-of-type {
     margin: 1rem 0;
   }
 
-  #nav .nav-item:not(:first-child) {
+  nav .nav-item:not(:first-child) {
     display: none;
   }
 
@@ -931,7 +940,7 @@ tr:last-of-type {
     display: flex;
   }
 
-  #social-icons-nav {
+  .social-icons-nav {
     display: none;
   }
 
