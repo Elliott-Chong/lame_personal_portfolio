@@ -3,10 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0 max-scale=0.65"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elliott Chong</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,7 +28,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" type="module" defer></script>
+    <script src="script.js" type="module"></script>
   </head>
   <body>
     <nav class="nav">
@@ -82,10 +79,10 @@
         <div id="timeline-circle"></div>
       </aside>
       <section id="content-container">
-        <article id="typewriter-div" class="content">
+        <div id="typewriter-div" class="content">
           <span id="typewriter-main" class="main-text">I am</span>
           <span id="typewriter-dynamic" class="main-text"></span>
-        </article>
+        </div>
 
         <section id="aspiration-div" class="content">
           <h1 class="main-text">
@@ -111,16 +108,21 @@
           <div id="scratch-img-wrapper" class="img-wrapper">
             <figure class="img-div half-div">
               <img src="./images/car-racing-game.png" alt="car racing game" />
-              <a href="https://scratch.mit.edu/projects/90753321/"
-                ><button target="_blank" class="btn">Link to game</button></a
+
+              <a
+                target="_blank"
+                class="btn"
+                href="https://scratch.mit.edu/projects/90753321/"
+                >Link to game</a
               >
             </figure>
             <figure class="img-div half-div">
               <img src="./images/snake-game.png" alt="snake game" />
               <a
                 target="_blank"
+                class="btn"
                 href="https://scratch.mit.edu/projects/215637415/"
-                ><button class="btn">Link to game</button></a
+                >Link to game</a
               >
             </figure>
           </div>
@@ -140,11 +142,12 @@
                 updated users on WhatsApp in real time.
               </p>
             </figure>
-            <figcaption class="quarter-div">
+            <div class="quarter-div">
               <a
+                class="btn"
                 href="https://github.com/Elliott-Chong/whatsbus"
                 target="_blank"
-                ><button class="btn">Link to Source Code</button></a
+                >Link to Source Code</a
               >
               <p class="desc">
                 I wrote this program primarily to solve my own problem of always
@@ -155,7 +158,7 @@
                 automatically remind me of bus timings so that I can plan my
                 travels better.
               </p>
-            </figcaption>
+            </div>
           </div>
         </section>
 
@@ -173,7 +176,6 @@
               <iframe
                 title="Caesar Cipher REPLIT"
                 src="https://replit.com/@ElliottChong/Caesar-Cipher?embed=true"
-                frameborder="0"
               ></iframe>
               <p class="desc">
                 Click the green run button to try out the code!
@@ -192,11 +194,12 @@
             <figure class="three-quarter-div img-div">
               <img src="./images/finance.png" alt="finance png" />
             </figure>
-            <figcaption class="quarter-div">
+            <div class="quarter-div">
               <a
+                class="btn"
                 href="https://github.com/Elliott-Chong/elle-finance"
                 target="_blank"
-                ><button class="btn">Link to Source Code</button></a
+                >Link to Source Code</a
               >
               <p class="desc">
                 CS50 Finance, an assignment part of the course that taught me
@@ -208,7 +211,7 @@
                 utilise other people's data in my own project, and also taught
                 me the use of SQL to manage data in my database.
               </p>
-            </figcaption>
+            </div>
           </div>
         </section>
 
@@ -221,19 +224,21 @@
             <figure class="img-div three-quarter-div">
               <img src="./images/udemy.png" alt="udemy img" />
             </figure>
-            <figcaption class="quarter-div">
+            <div class="quarter-div">
               <a
+                class="btn"
                 href="https://github.com/Elliott-Chong/react-search-github-users"
                 target="_blank"
                 rel="noopener noreferrer"
-                ><button class="btn">Link to Source Code</button></a
+                >Link to Source Code</a
               >
               <a
+                class="btn"
                 href="https://github-users-elliott.netlify.app"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button class="btn">Link to Project</button>
+                Link to Project
               </a>
               <p class="desc">
                 Github-Users, A project assigned by my Udemy course on the
@@ -249,7 +254,7 @@
                 accomplish complex features with ease. e.g. Using FusionCharts
                 to make beautiful charts to display user data.
               </p>
-            </figcaption>
+            </div>
           </div>
         </section>
 
@@ -270,20 +275,21 @@
                 src="./images/codewars-solution.png"
                 alt="codewars solution"
               />
-              <figcaption>
+              <div>
                 <p class="desc">
                   Codewars, an algorithmic style coding challenge website where
                   users can write code in their preferred language to solve a
                   set of problems
                 </p>
                 <a
+                  class="btn"
                   href="https://www.codewars.com/users/ElliottBelle"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button class="btn">My Codewars Profile</button>
+                  My Codewars Profile
                 </a>
-              </figcaption>
+              </div>
             </figure>
           </div>
         </section>
@@ -299,21 +305,23 @@
             <figure class="three-quarter-div img-div">
               <img src="./images/devconnector.png" alt="devconnector" />
             </figure>
-            <figcaption class="quarter-div">
+            <div class="quarter-div">
               <a
+                class="btn"
                 href="https://github.com/Elliott-Chong/DevConnector"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button class="btn">Link to Source Code</button>
+                Link to Source Code
               </a>
 
               <a
+                class="btn"
                 href="https://devconnector-elliott.netlify.app"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button class="btn">Link to Project</button>
+                Link to Project
               </a>
 
               <p class="desc">
@@ -327,7 +335,7 @@
                 the frontend with ReactJS. It taught me important concepts such
                 as JWTs for authentication and password encryption.
               </p>
-            </figcaption>
+            </div>
           </div>
         </section>
 
@@ -343,21 +351,23 @@
               <img src="./images/sportbuddy.png" alt="sportbuddy img" />
             </figure>
 
-            <figcaption class="quarter-div">
+            <div class="quarter-div">
               <a
+                class="btn"
                 href="https://github.com/Elliott-Chong/SportBuddy"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button class="btn">Link to Source Code</button>
+                Link to Source Code
               </a>
 
               <a
+                class="btn"
                 href="https://sportbuddy.elliottchong.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button class="btn">Link to Project</button>
+                Link to Project
               </a>
 
               <p class="desc">
@@ -368,7 +378,7 @@
                 Sometimes your friends might be too busy, with SportBuddy, you
                 simply have to create a listing, and other users can join you!
               </p>
-            </figcaption>
+            </div>
           </div>
         </section>
 
@@ -386,13 +396,14 @@
               />
             </figure>
 
-            <figcaption class="quarter-div">
+            <div class="quarter-div">
               <a
+                class="btn"
                 href="https://github.com/Elliott-Chong/pure_personal_portfolio"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button class="btn">Link to Source Code</button></a
+                Link to Source Code</a
               >
               <p class="desc">
                 This website was originally built out using ReactJS, with custom
@@ -408,7 +419,7 @@
                 The theme and design of this website was designed by me from
                 scratch using Inkscape, a vector based graphics editor.
               </p>
-            </figcaption>
+            </div>
           </div>
         </section>
 
