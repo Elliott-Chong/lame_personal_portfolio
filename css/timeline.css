@@ -1,0 +1,65 @@
+#timeline {
+  position: relative;
+  --height: 0px;
+}
+
+#timeline::after {
+  content: "";
+  position: absolute;
+  height: calc(100% + 100px);
+  background-color: white;
+  width: 2px;
+}
+
+#timeline-circle {
+  height: 1.25rem;
+  width: 1.25rem;
+  background-color: white;
+  position: fixed;
+  top: 55vh;
+  transform: translateX(-45%);
+  border-radius: 50%;
+}
+
+#typewriter-div {
+  color: white;
+  font-size: 2rem;
+  transform: translateY(-50%);
+}
+
+#typewriter-dynamic {
+  position: relative;
+  --speed: 2000ms;
+  --length: 9;
+  --delay: 200ms;
+}
+
+#typewriter-dynamic::after {
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #0d0208;
+  position: absolute;
+}
+
+#typewriter-dynamic.typewrite::after {
+  animation: typewrite forwards var(--speed) var(--delay) steps(var(--length));
+}
+#typewriter-dynamic.typewrite::before {
+  animation: typewrite forwards var(--speed) var(--delay) steps(var(--length)),
+    blink 700ms steps(2, start) infinite;
+}
+
+#typewriter-dynamic::before {
+  z-index: 100;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 80%;
+  background-color: var(--terminal-green);
+  width: 20px;
+  animation: blink 700ms steps(2, start) infinite;
+}

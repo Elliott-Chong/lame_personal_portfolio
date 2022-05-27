@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins";
+        font-weight: 600;
+        font-size: 2rem;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+        padding-inline: 20vw;
+        flex-direction: column;
+      }
+
+      .yes {
+        color: black;
+      }
+
+      p {
+        padding: 2rem;
+        text-shadow: 6px 6px gray;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="yes">
+      Hello, <br />
+      Lorem ipsum dolor sit amet consectetur
+    </p>
+
+    <script>
+      const scale = (number, [inMin, inMax], [outMin, outMax]) => {
+        // if you need an integer value use Math.floor or Math.ceil here
+        return (
+          ((number - inMin) / (inMax - inMin)) * (outMax - outMin) + outMin
+        );
+      };
+
+      document.querySelectorAll("p").forEach((elt) => {
+        let client = elt.getBoundingClientRect();
+        elt.addEventListener("mousemove", (e) => {
+          let x = scale(e.offsetX, [0, client.width], [8, -8]);
+          let y = scale(e.offsetY, [0, client.height], [8, -8]);
+          console.log(x, y);
+          elt.style.textShadow = `${x}px ${y}px gray`;
+        });
+      });
+    </script>
+  </body>
+</html>
