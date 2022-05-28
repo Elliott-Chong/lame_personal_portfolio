@@ -396,6 +396,15 @@ img {
   display: none;
 }
 
+
+.intro {
+  transition:text-shadow 200ms;
+}
+
+.intro:hover {
+  text-shadow: 4px 4px gray
+}
+
 .flex {
   margin-top: 1rem;
   display: flex;
