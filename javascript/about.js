@@ -19,8 +19,6 @@ ham.onclick = () => {
   }
 };
 
-document.querySelector("body").style.maxWidth = window.innerWidth + "px";
-
 if (window.innerWidth > 800) {
   const aboutme = document.querySelector(".about-me");
   const aboutimg1 = document.querySelector("#about-img-1");

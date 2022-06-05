@@ -114,7 +114,7 @@
 
         <div class="input-wrapper">
           <div>
-            <p>How much do you like this slider?</p>
+            <p>How likely would you visit this website again?</p>
             <input
               type="range"
               min="1"
@@ -126,7 +126,7 @@
             />
           </div>
 
-          <p>Do you like this radio box?</p>
+          <p>Do you like this website?</p>
           <div class="flex" id="radio-wrapper">
             <input type="radio" name="preference" id="yes" />
             <input type="radio" name="preference" id="no" />
@@ -153,16 +153,32 @@
           </div>
         </div>
 
-        <button type="submit" class="btn contact-btn">
-          Submit
-          <img
-            class="hidden"
-            id="spinner"
-            src="./images/spinner.gif"
-            alt="spinner"
-          />
-          <img src="./images/check.png" alt="check" class="hidden" id="check" />
-        </button>
+        <div class="btn-container">
+          <button type="submit" class="btn contact-btn">
+            submit
+            <img
+              class="hidden"
+              id="spinner"
+              src="./images/spinner.gif"
+              alt="spinner"
+            />
+            <img
+              src="./images/check.png"
+              alt="check"
+              class="hidden"
+              id="check"
+            />
+          </button>
+          <button type="reset" class="btn contact-btn">
+            Reset
+            <img
+              src="./images/check.png"
+              alt="check"
+              class="hidden"
+              id="check"
+            />
+          </button>
+        </div>
       </form>
     </div>
   </body>

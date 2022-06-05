@@ -1,5 +1,4 @@
 import { qs, sleep } from "./utils.js";
-document.body.style.zoom = "100%";
 
 const contactForm = qs("#contact-form");
 contactForm.onsubmit = (e) => {
