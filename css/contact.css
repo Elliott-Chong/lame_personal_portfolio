@@ -27,6 +27,7 @@ input[type="checkbox"]::before {
   gap: 1rem;
 }
 
+/* custom styling for forms */
 #aesthetics:checked::before {
   background-color: var(--terminal-green);
 }

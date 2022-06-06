@@ -3,6 +3,7 @@
   --height: 0px;
 }
 
+/* these are the styles to create the typewriter effect */
 #timeline::after {
   content: "";
   position: absolute;
