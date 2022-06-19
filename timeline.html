@@ -27,18 +27,58 @@
   </head>
   <body>
     <!-- this is the nav bar -->
-    <nav class="nav">
+    <nav id="side-nav">
+      <a class="nav-item" href="/projects.html">.projects()</a>
+      <a class="nav-item" href="/timeline.html">.timeline()</a>
+      <div class="social-icons-nav side-nav-si">
+        <div>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/Elliott-Chong"
+          >
+            <img class="social-icon" src="./images/github.svg" alt="github" />
+          </a>
+        </div>
+        <div>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.instagram.com/elliottchong_/"
+          >
+            <img
+              class="social-icon"
+              src="./images/instagram.svg"
+              alt="instagram"
+            />
+          </a>
+        </div>
+        <div>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/elliott-chong-566a98224/"
+          >
+            <img
+              class="social-icon"
+              src="./images/linkedin.svg"
+              alt="linkedin"
+            />
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- this is the main nav bar -->
+    <nav class="nav about-nav">
+      <span id="ham"></span>
       <div>
-        <a class="nav-item" href="index.html">elliott.Chong()</a>
-        <a class="nav-item" id="contact-nav" href="/contact.html">.contact()</a>
-        <a class="nav-item" id="project-nav" href="/projects.html"
+        <a href="index.html" class="nav-item">elliott.Chong()</a>
+        <a id="project-nav" class="nav-item" href="/projects.html"
           >.projects()</a
         >
-        <a class="nav-item nav-active" id="timeline-nav" href="/timeline.html"
+        <a id="timeline-nav" class="nav-item" href="/timeline.html"
           >.timeline()</a
         >
-        <a class="nav-item" id="sp-nav" href="/sp.html">.SP()</a>
-        <a class="nav-item" id="career-nav" href="/career.html">.careers()</a>
       </div>
       <div class="social-icons-nav">
         <div>
@@ -47,11 +87,7 @@
             rel="noreferrer"
             href="https://github.com/Elliott-Chong"
           >
-            <img
-              class="social-icon"
-              src="./images/github.svg"
-              alt="instagram"
-            />
+            <img class="social-icon" src="./images/github.svg" alt="github" />
           </a>
         </div>
         <div>
@@ -446,8 +482,7 @@
             <a href="/contact.html"><u>Contact me</u></a>
           </h3>
           <div id="social-icons-end">
-            <img class="social-icon" src="./images/github.svg" alt="instagram"
-            /github
+            <img class="social-icon" src="./images/github.svg" alt="github" />
             <img
               class="social-icon"
               src="./images/instagram.svg"

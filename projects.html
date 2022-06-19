@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=0.65" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elliott Chong</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,14 +26,57 @@
   </head>
   <body>
     <!-- this is the nav bar -->
-    <nav class="nav">
+    <nav id="side-nav">
+      <a class="nav-item" href="/projects.html">.projects()</a>
+      <a class="nav-item" href="/timeline.html">.timeline()</a>
+      <div class="social-icons-nav side-nav-si">
+        <div>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/Elliott-Chong"
+          >
+            <img class="social-icon" src="./images/github.svg" alt="github" />
+          </a>
+        </div>
+        <div>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.instagram.com/elliottchong_/"
+          >
+            <img
+              class="social-icon"
+              src="./images/instagram.svg"
+              alt="instagram"
+            />
+          </a>
+        </div>
+        <div>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/elliott-chong-566a98224/"
+          >
+            <img
+              class="social-icon"
+              src="./images/linkedin.svg"
+              alt="linkedin"
+            />
+          </a>
+        </div>
+      </div>
+    </nav>
+    <nav class="nav about-nav">
+      <span id="ham"></span>
       <div>
-        <a href="index.html" class="nav-item"> elliott.Chong() </a>
-        <a class="nav-item" href="/contact.html">.contact()</a>
-        <a class="nav-item nav-active" href="/projects.html">.projects()</a>
-        <a class="nav-item" href="/timeline.html">.timeline()</a>
-        <a class="nav-item" href="/sp.html">.SP()</a>
-        <a class="nav-item" href="/career.html">.careers()</a>
+        <a href="index.html" class="nav-item">elliott.Chong()</a>
+        <a id="project-nav" class="nav-item" href="/projects.html"
+          >.projects()</a
+        >
+        <a id="timeline-nav" class="nav-item" href="/timeline.html"
+          >.timeline()</a
+        >
       </div>
       <div class="social-icons-nav">
         <div>
@@ -42,11 +85,7 @@
             rel="noreferrer"
             href="https://github.com/Elliott-Chong"
           >
-            <img
-              class="social-icon"
-              src="./images/github.svg"
-              alt="instagram"
-            />
+            <img class="social-icon" src="./images/github.svg" alt="github" />
           </a>
         </div>
         <div>
@@ -213,7 +252,7 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              to Source Code
+              Link to Source Code
             </a>
             <p class="desc">
               This is a demostration of the minimax algorithm, an adversarial
@@ -256,7 +295,7 @@
             </a>
             <p class="desc">
               A sudoku solver that utilises backtracking to enumerate and
-              exhausts all possible board states.
+              exhaust all possible board states.
             </p>
           </div>
         </div>

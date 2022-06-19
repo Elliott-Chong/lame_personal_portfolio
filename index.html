@@ -27,11 +27,8 @@
   </head>
   <body>
     <nav id="side-nav">
-      <a class="nav-item" href="/contact.html">.contact()</a>
       <a class="nav-item" href="/projects.html">.projects()</a>
       <a class="nav-item" href="/timeline.html">.timeline()</a>
-      <a class="nav-item" href="/sp.html">.SP()</a>
-      <a class="nav-item" href="/career.html">.careers()</a>
       <div class="social-icons-nav side-nav-si">
         <div>
           <a
@@ -75,15 +72,12 @@
       <span id="ham"></span>
       <div>
         <a href="index.html" class="nav-item">elliott.Chong()</a>
-        <a id="contact-nav" class="nav-item" href="/contact.html">.contact()</a>
         <a id="project-nav" class="nav-item" href="/projects.html"
           >.projects()</a
         >
         <a id="timeline-nav" class="nav-item" href="/timeline.html"
           >.timeline()</a
         >
-        <a class="nav-item" id="sp-nav" href="/sp.html">.SP()</a>
-        <a class="nav-item" id="career-nav" href="/career.html">.careers()</a>
       </div>
       <div class="social-icons-nav">
         <div>
@@ -125,154 +119,37 @@
     </nav>
     <!-- this is the main content container -->
     <main id="main-about-container">
-      <section class="about-wrapper img-wrapper">
-        <article class="about-me three-quarter-div">
-          <h2 class="intro">👋</h2>
-          <h2 class="intro" id="intro-name">Hello, I am Elliott Chong</h2>
-          <p class="sub-text">
-            computer science enthusiast, web designer hobbyist
-          </p>
-        </article>
-        <figure class="quarter-div">
-          <img
-            src="./images/about.jpeg"
-            class="about-img"
-            id="about-img-1"
-            alt="profile picture"
-          />
-        </figure>
-      </section>
-      <!-- All images are taken from https://pixabay.com -->
-      <section class="about-wrapper img-wrapper">
-        <figure class="quarter-div">
-          <img
-            src="./images/about1.jpeg"
-            class="about-img"
-            alt="profile picture"
-            id="about-img-2"
-          />
-        </figure>
-        <article class="about-me three-quarter-div">
-          <h2 class="intro">Hobbies</h2>
-          <ul class="about-ul">
-            <li class="about-li">
-              <details class="about-details">
-                <summary class="about-summary">Running</summary>
-                <p>
-                  Running helps me to destress and makes me feel happy and
-                  relaxed.
-                </p>
-                <br />
-                <p>I get to enjoy beautiful sceneries during my run.</p>
-                <br />
-                <p>My current goal is to run a half-marathon.</p>
-              </details>
-            </li>
-            <li class="about-li">
-              <details class="about-details">
-                <summary class="about-summary">Coding</summary>
-                <p>
-                  Programming, more specifically web design, gives me plenty of
-                  fulfillment and satisfaction
-                </p>
-              </details>
-            </li>
-            <li class="about-li">
-              <details class="about-details">
-                <summary class="about-summary">Gym</summary>
-                Working out and pushing myself in the gym trains my
-                self-discipline and boosts my self confidence.
-              </details>
-            </li>
-          </ul>
-        </article>
-      </section>
-
-      <!-- this is the schooling history table -->
-      <section class="about-wrapper img-wrapper">
-        <table>
-          <caption>
-            My Schooling History
-          </caption>
-          <colgroup>
-            <col />
-            <col />
-            <col />
-
-            <col span="6" />
-          </colgroup>
-          <thead>
-            <tr id="w3-hack">
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-            </tr>
-            <tr>
-              <th>Years</th>
-              <th>School</th>
-              <th>Subjects</th>
-              <th colspan="6">CCAs</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr>
-              <td rowspan="4" class="period">2012 ~ 2018</td>
-              <td rowspan="4">Pei Hua Presbytarian Primary School</td>
-              <td>English</td>
-              <td rowspan="4" colspan="2">Robotics</td>
-              <td rowspan="4" colspan="2">Table Tennis</td>
-              <td rowspan="4" colspan="2">Track & Field</td>
-            </tr>
-
-            <tr>
-              <td>Science</td>
-            </tr>
-
-            <tr>
-              <td>Math</td>
-            </tr>
-
-            <tr>
-              <td>Chinese</td>
-            </tr>
-
-            <tr>
-              <td rowspan="7" class="period">2018 ~ 2021</td>
-              <td rowspan="7">St. Joseph's Institution</td>
-              <td>Literature</td>
-              <td rowspan="7" colspan="4">Scouts</td>
-              <td rowspan="7" colspan="2">Judo</td>
-            </tr>
-            <tr>
-              <td>Chinese</td>
-            </tr>
-
-            <tr>
-              <td>Mathematics</td>
-            </tr>
-
-            <tr>
-              <td>Additional Mathematics</td>
-            </tr>
-
-            <tr>
-              <td>Physics</td>
-            </tr>
-            <tr>
-              <td>Chemistry</td>
-            </tr>
-            <tr>
-              <td>Biology</td>
-            </tr>
-          </tbody>
-        </table>
+      <section class="about-wrapper">
+        <div style="margin-top: 0" class="img-wrapper">
+          <article class="about-me three-quarter-div">
+            <h2 class="intro">👋</h2>
+            <h2 class="intro" id="intro-name">
+              Hello, I am <span class="name">Elliott Chong</span>
+            </h2>
+            <p class="sub-text">
+              computer science enthusiast, web designer hobbyist
+            </p>
+          </article>
+          <figure class="quarter-div">
+            <img
+              src="./images/about.jpg"
+              class="about-img"
+              id="about-img-1"
+              alt="profile picture"
+            />
+          </figure>
+        </div>
+        <p class="mobile-project">
+          Check out some of my latest projects
+          <a href="/projects.html"><u>here</u></a
+          >.
+        </p>
+        <br />
+        <br />
+        <p class="mobile-project">
+          or glance at my coding timeline by clicking on the hamburger menu at
+          the top left corner.
+        </p>
       </section>
     </main>
   </body>
