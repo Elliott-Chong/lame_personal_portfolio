@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=DM+Mono:wght@400;500&family=Poppins:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 :root {
   --terminal-green: rgb(0, 255, 65);
   --yellow: #fcbf49;
@@ -30,7 +31,7 @@ body {
   bottom: 0;
   left: -100%;
   right: 100%;
-  z-index: 100;
+  z-index: 1000;
   background-color: black;
   transition: all 500ms;
   display: flex;
@@ -156,7 +157,7 @@ a.btn {
   display: flex;
   font-size: 1.875rem;
   line-height: 2.25rem;
-  z-index: 100;
+  z-index: 1001;
   background: linear-gradient(
     180deg,
     rgba(13, 2, 8),
@@ -408,13 +409,8 @@ img {
 }
 
 
-.intro {
-  transition:text-shadow 200ms;
-}
 
-.intro:hover {
-  text-shadow: 4px 4px gray
-}
+
 
 .flex {
   margin-top: 1rem;
@@ -440,13 +436,94 @@ img {
 }
 
 /* index.html (main page) */
-.about-img {
-  border-radius: 0;
+
+
+/* notification styling */
+.notification {
+  transition: all 500ms ease-in-out;
+  position: fixed;
+  bottom: 5rem;
+  left: 6rem;
+  max-width: 400px;
+  padding: 2rem 2rem;
+  background-color: rgb(223, 223, 223);
+  border-radius: 6px;
+  color: black;
+  box-shadow: 0px 0px 100px rgb(59, 59, 59);
+}
+
+/* .notification .notif-content {
+
+} */
+
+.notification .dismiss {
+  --size: 24px;
+  position: absolute;
+  top: .6rem;
+  right: .6rem;
+  line-height: 1;
+  width: var(--size);
+  height: var(--size);
+  color: black;
+  cursor: pointer;
+}
+
+.notification .notif-content a {
+  background-color: black;
+  padding: .3rem .6rem;
+  border-radius: 4px;
+}
+
+.notification .notif-content .annoy {
+  font-size: .8rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.notif-annoy-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.anim-left {
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: opacity, transform 500ms ease-in-out;
+}
+
+.dismissed {
+  animation: dismissed forwards 500ms ease-in-out;
+}
+
+@keyframes dismissed {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  50% {
+    opacity: .8;
+    /* transform: translateX(-50px); */
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-80px);
+    display: none;
+  }
+}
+
+.anim-right {
+  opacity: 0;
+  transform: translateX(80px);
+  transition: opacity, transform 500ms ease-in-out;
 }
 
 .name {
   color:var(--terminal-green);
-  font-family: 'DM Mono'; 
+  font-family: 'Space Mono' ,monospace; 
 }
 
 .about-me {
@@ -454,9 +531,9 @@ img {
 }
 
 .about-wrapper img {
-  /* clip-path: inset(0 round 5% 30%); */
   position: relative;
   animation: about-radius infinite 4s ease-in-out;
+  box-shadow: 0px 0px 100px rgb(39, 39, 39);
 }
 
 
@@ -687,8 +764,6 @@ tr:last-of-type {
   }
 
   #typewriter-dynamic::before {
-    top: 0;
-    bottom: -5px;
     width: 13px !important;
   }
 
@@ -717,8 +792,18 @@ tr:last-of-type {
     margin: 1rem 0;
   }
 
+  #main-page-nav {
+    padding-top: 3rem;
+  }
+
   /* Mobile side navigation */
 
+  /* .nav .nav-item {
+    display: none;
+  } */
+  #main-page-logo {
+    display: none;
+  }
   .nav .nav-item:not(:first-child) {
     display: none;
   }
@@ -769,5 +854,17 @@ tr:last-of-type {
   /* contact.html */
   #main-contact-container {
     padding: 2.5rem;
+  }
+
+  /* notification */
+  .notification {
+    bottom: 1rem;
+    left: 1rem;
+    max-width: 90vw;
+  }
+
+  .notif-annoy-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

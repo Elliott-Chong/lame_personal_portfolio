@@ -10,6 +10,7 @@ const initTypewriter = async (text) => {
   typewriter.innerText = text;
   const length = text.length;
   typewriter.style.setProperty("--length", length);
+  typewriter.style.setProperty("--speed", "2000ms");
   await sleep(50);
   typewriter.classList.add("typewrite");
 };

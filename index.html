@@ -23,7 +23,9 @@
     />
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/timeline.css" />
     <script src="./javascript/about.js" defer></script>
+    <script src="./javascript/global.js" defer></script>
   </head>
   <body>
     <nav id="side-nav">
@@ -68,10 +70,12 @@
       </div>
     </nav>
     <!-- this is the main nav bar -->
-    <nav class="nav about-nav">
+    <nav id="main-page-nav" class="nav about-nav">
       <span id="ham"></span>
       <div>
-        <a href="index.html" class="nav-item">elliott.Chong()</a>
+        <a href="index.html" id="main-page-logo" class="nav-item"
+          >elliott.Chong()</a
+        >
         <a id="project-nav" class="nav-item" href="/projects.html"
           >.projects()</a
         >
@@ -121,10 +125,11 @@
     <main id="main-about-container">
       <section class="about-wrapper">
         <div style="margin-top: 0" class="img-wrapper">
-          <article class="about-me three-quarter-div">
-            <!-- <h2 class="intro">👋</h2> -->
+          <article class="about-me anim anim-left three-quarter-div">
             <h2 class="intro" id="intro-name">
-              Hello, I am <span class="name">Elliott Chong</span>
+              <span id="typewriter-dynamic" class="name typewrite"
+                >Elliott Chong</span
+              >
             </h2>
             <p class="sub-text">
               computer science enthusiast, web designer hobbyist
@@ -133,7 +138,7 @@
           <figure class="quarter-div">
             <img
               src="./images/about.jpg"
-              class="about-img"
+              class="about-img anim anim-right"
               id="about-img-1"
               alt="profile picture"
             />
@@ -153,5 +158,35 @@
         </p>
       </section>
     </main>
+    <div class="notification anim anim-left">
+      <span class="dismiss">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </span>
+      <div class="notif-content">
+        <h3 class="title">Check out my latest project!</h3>
+        <br />
+        I rebuilt my personal portfolio website using bootstrap.
+        <br />
+        <br />
+        <div class="notif-annoy-wrapper">
+          <a target="_blank" href="https://bootstrap.elliottchong.com"
+            >Bootstrap!</a
+          >
+          <u class="annoy">mute for a while</u>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

@@ -30,8 +30,8 @@
 
 #typewriter-dynamic {
   position: relative;
-  --speed: 2000ms;
-  --length: 9;
+  --speed: 3000ms;
+  --length: 13;
   --delay: 200ms;
 }
 
@@ -50,7 +50,7 @@
 }
 #typewriter-dynamic.typewrite::before {
   animation: typewrite forwards var(--speed) var(--delay) steps(var(--length)),
-    blink 700ms steps(2, start) infinite;
+    blink 1000ms steps(2, start) infinite;
 }
 
 #typewriter-dynamic::before {
@@ -60,6 +60,8 @@
   left: 0;
   right: 0;
   height: 80%;
+  top: 50%;
+  transform: translateY(-50%);
   background-color: var(--terminal-green);
   width: 20px;
   animation: blink 700ms steps(2, start) infinite;

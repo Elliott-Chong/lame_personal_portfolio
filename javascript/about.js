@@ -19,6 +19,39 @@ ham.onclick = () => {
   }
 };
 
+if (localStorage.getItem("annoy") != null) {
+  var payload = JSON.parse(localStorage.getItem("annoy"));
+
+  let should_show = payload.should_show;
+  if (payload.ttl && payload.ttl <= new Date()) {
+    should_show = false;
+    let new_payload = {
+      should_show: true,
+      ttl: null,
+    };
+    localStorage.setItem("annoy", new_payload);
+  }
+
+  if (!should_show) {
+    document.querySelector(".notification").style.display = "none";
+  }
+}
+
+document.querySelector(".annoy").onclick = () => {
+  document.querySelector(".notification").classList.add("dismissed");
+  var currentDate = new Date();
+  var twentyMinutesLater = new Date(currentDate.getTime() + 20 * 60 * 1000);
+  const payload = JSON.stringify({
+    show_show: false,
+    ttl: twentyMinutesLater,
+  });
+  localStorage.setItem("annoy", payload);
+};
+
+document.querySelector(".dismiss").onclick = () => {
+  document.querySelector(".notification").classList.add("dismissed");
+};
+
 // if (window.innerWidth > 800) {
 //   const aboutme = document.querySelector(".about-me");
 //   const aboutimg1 = document.querySelector("#about-img-1");
