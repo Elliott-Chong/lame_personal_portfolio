@@ -31,7 +31,7 @@
 #typewriter-dynamic {
   position: relative;
   --speed: 3000ms;
-  --length: 13;
+  --length: 14;
   --delay: 200ms;
 }
 

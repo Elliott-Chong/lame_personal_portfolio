@@ -23,13 +23,13 @@ if (localStorage.getItem("annoy") != null) {
   var payload = JSON.parse(localStorage.getItem("annoy"));
 
   let should_show = payload.should_show;
-  if (payload.ttl && payload.ttl <= new Date()) {
+  if (payload.ttl && new Date(payload.ttl) <= new Date()) {
     should_show = false;
     let new_payload = {
       should_show: true,
       ttl: null,
     };
-    localStorage.setItem("annoy", new_payload);
+    localStorage.setItem("annoy", JSON.stringify(new_payload));
   }
 
   if (!should_show) {
