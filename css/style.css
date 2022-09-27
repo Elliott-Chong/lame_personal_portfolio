@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=DM+Mono:wght@400;500&family=Poppins:wght@400;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 :root {
   --terminal-green: rgb(0, 255, 65);
   --yellow: #fcbf49;
@@ -15,7 +15,6 @@
 html {
   scroll-behavior: smooth !important;
 }
-
 
 body {
   overflow-x: hidden !important;
@@ -184,14 +183,17 @@ a.btn {
 .social-icon {
   color: white;
   font-size: 2.5rem;
-  width:34px !important;
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(327deg) brightness(109%) contrast(103%);
-  transition:filter 300ms;
+  width: 35px !important;
+  height: 35px !important;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(327deg)
+    brightness(109%) contrast(103%);
+  transition: filter 300ms;
   cursor: pointer;
 }
 
-.social-icon:hover{
-  filter: invert(53%) sepia(89%) saturate(1045%) hue-rotate(90deg) brightness(115%) contrast(111%);
+.social-icon:hover {
+  filter: invert(53%) sepia(89%) saturate(1045%) hue-rotate(90deg)
+    brightness(115%) contrast(111%);
 }
 
 .social-icons-nav > * {
@@ -408,10 +410,6 @@ img {
   display: none;
 }
 
-
-
-
-
 .flex {
   margin-top: 1rem;
   display: flex;
@@ -436,7 +434,6 @@ img {
 }
 
 /* index.html (main page) */
-
 
 /* notification styling */
 .notification {
@@ -463,8 +460,8 @@ section.project-wrapper {
 .notification .dismiss {
   --size: 24px;
   position: absolute;
-  top: .6rem;
-  right: .6rem;
+  top: 0.6rem;
+  right: 0.6rem;
   line-height: 1;
   width: var(--size);
   height: var(--size);
@@ -474,12 +471,12 @@ section.project-wrapper {
 
 .notification .notif-content a {
   background-color: black;
-  padding: .3rem .6rem;
+  padding: 0.3rem 0.6rem;
   border-radius: 4px;
 }
 
 .notification .notif-content .annoy {
-  font-size: .8rem;
+  font-size: 0.8rem;
   cursor: pointer;
   white-space: nowrap;
 }
@@ -508,7 +505,7 @@ section.project-wrapper {
   }
 
   50% {
-    opacity: .8;
+    opacity: 0.8;
     /* transform: translateX(-50px); */
   }
 
@@ -526,8 +523,8 @@ section.project-wrapper {
 }
 
 .name {
-  color:var(--terminal-green);
-  font-family: 'Space Mono' ,monospace; 
+  color: var(--terminal-green);
+  font-family: "Space Mono", monospace;
 }
 
 .about-me {
@@ -540,20 +537,19 @@ section.project-wrapper {
   box-shadow: 0px 0px 100px rgb(39, 39, 39);
 }
 
-
 @keyframes about-radius {
-  0%{
-  border-radius: 63% 37% 27% 73% / 66% 47% 53% 34% ;
+  0% {
+    border-radius: 63% 37% 27% 73% / 66% 47% 53% 34%;
   }
-  30%{
-    border-radius: 25% 75% 16% 84% / 79% 21% 79% 21% ;
+  30% {
+    border-radius: 25% 75% 16% 84% / 79% 21% 79% 21%;
   }
-  60%{
-    border-radius: 34% 66% 57% 43% / 40% 31% 69% 60%   ;
-    }
-    100%{
-      border-radius: 63% 37% 27% 73% / 66% 47% 53% 34% ;
-      }
+  60% {
+    border-radius: 34% 66% 57% 43% / 40% 31% 69% 60%;
+  }
+  100% {
+    border-radius: 63% 37% 27% 73% / 66% 47% 53% 34%;
+  }
 }
 
 .about-wrapper img:nth-child(2) {
@@ -564,8 +560,6 @@ section.project-wrapper {
 section.about-wrapper.img-wrapper {
   margin-top: 0;
 }
-
-
 
 h2.intro {
   font-size: 3rem;
@@ -730,21 +724,20 @@ tr:last-of-type {
 }
 
 @media (max-width: 900px) {
-
   .btn {
     font-size: 1rem;
   }
 
-  .nav{
+  .nav {
     padding: 1.5rem 2.5rem;
     font-size: 1.5rem;
   }
 
-  #content-container{
+  #content-container {
     padding: 0rem 2rem;
   }
 
-  #ending-credentials-div > *{
+  #ending-credentials-div > * {
     font-size: 1.2rem;
   }
 
@@ -833,14 +826,12 @@ tr:last-of-type {
     font-size: 1.3rem;
   }
 
-  #projects-title::after{
+  #projects-title::after {
     width: 10px;
   }
 
-
-
   #side-nav .nav-item {
-    margin: .5rem 0rem;
+    margin: 0.5rem 0rem;
   }
 
   /* about.html */

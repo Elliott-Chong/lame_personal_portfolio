@@ -45,11 +45,13 @@ document.querySelector(".annoy").onclick = () => {
     show_show: false,
     ttl: twentyMinutesLater,
   });
+  document.querySelector(".notification").style.display = "none";
   localStorage.setItem("annoy", payload);
 };
 
 document.querySelector(".dismiss").onclick = () => {
   document.querySelector(".notification").classList.add("dismissed");
+  document.querySelector(".notification").style.display = "none";
 };
 
 // if (window.innerWidth > 800) {
